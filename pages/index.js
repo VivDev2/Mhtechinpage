@@ -1,13 +1,13 @@
-import React from 'react'
+import React {useEffect}from 'react'
 import Image from 'next/image';
 import { FaFacebookSquare } from 'react-icons/fa';
 import { FaTwitterSquare } from 'react-icons/fa';
 import { FaInstagramSquare } from 'react-icons/fa';
-import { UseEffect } from 'react';
+
 import Link from 'next/link';
 
-const index = () => {
-  UseEffect(() => {
+function index  ()  {
+  useEffect(() => {
     const video = document.getElementById('my-video');
     video.setAttribute('loop', '');
   }, []);
